@@ -66,3 +66,14 @@ d3.select("body").selectAll("p").data(dataset).enter().append("p").
         return d;
     });
  ```
+
+ ### Custom Style
+ ```javascript
+ .style("color", function(d) {
+    if (d > 15) {   //Threshold of 15
+        return "red";
+    } else {
+        return "black";
+    }
+});
+```
